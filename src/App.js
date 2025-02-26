@@ -218,10 +218,10 @@ export default function App() {
   </h1> 
   <div className='grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mx-4 md:mx-[40vh] '>
     <div className='flex justify-center'>
-      <img className='my-auto w-full max-w-[200px]' src="/eth3.webp"/>
+      <img className='my-auto w-full max-w-[200px]' alt="ETHINDIA LOGO" src="/eth3.webp"/>
     </div>
     <div className='flex justify-center'>
-      <img className='my-auto w-full max-w-[200px]' src="/devfolio.png"/>
+      <img className='my-auto w-full max-w-[200px]' alt="DEVFOLIO LOGO" src="/devfolio.png"/>
     </div>
     <div className='flex justify-center'>
       <img className='my-auto w-full max-w-[200px]' src="/polygon.webp"/>
