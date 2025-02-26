@@ -97,6 +97,18 @@ const useScrollScale = (scaleRef, minScale = 1) => {
 };
 export default function App() {
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);
+
+
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -173,13 +185,17 @@ export default function App() {
     <div className='text-white font-[tech] z-10 w-full md:w-1/4 text-left'>
       Register Now
     </div>
+    hackwavex
     <div className='z-10 w-full md:w-2/3'>
       <p className='text-white font-[tech] text-xl md:text-xl z-10 text-left'>
         Ready to make waves with your ideas? Join us and build something incredible! 🌊🚀
       </p>
-      <button className='bg-white px-4 py-3 md:px-5 md:py-4 font-[tech] text-lg md:text-lg z-10 mt-5 w-full md:w-auto'>
-        REGISTER NOW
-      </button>
+      <div 
+	      class="apply-button" 
+	      data-hackathon-slug="hackwavex" 
+	      data-button-theme="dark"
+	      className='apply-button bg-white px-4  py-3 md:px-5 md:py-4 font-[tech] text-lg md:text-lg z-10 mt-5 w-full md:w-auto'
+        >REGISTER NOW</div>
     </div>
   </div>
 </div>
