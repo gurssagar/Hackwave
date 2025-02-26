@@ -278,7 +278,7 @@ export default function App() {
 
     {/* Mukal Dadhwal */}
     <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-        <img className='w-[150px] h-[150px] mx-auto  md:w-[200px] md:h-[200px] grayscale' src="/mukal_dadhwal.webp" alt="Mukal Dadhwal"/>
+        <img className='w-[150px] h-[150px] mx-auto  md:w-[200px] md:h-[200px] grayscale' src="/mukal.jpg" alt="Mukal Dadhwal"/>
         <div className="text-center md:text-left">
             <h2 className='text-3xl md:text-4xl my-3'>Mukal Dadhwal</h2>
             <p className='text-lg font-[tech]'>TEACH LEAD</p>
