@@ -2,13 +2,12 @@
 import './App.css';
 import { useEffect, useState, useRef } from "react";
 import {useRive} from "@rive-app/react-canvas";
-
+import { Document, Page, pdfjs } from 'react-pdf';
 import { FlipWords } from './components/flipwords';
 import { SignupFormDemo } from './components/form';
 import AccordionComponents from './components/accordion'
 import Navigation from './components/navigation';
 const { Accordion, AccordionItem, AccordionTrigger, AccordionContent } = AccordionComponents
-
 
 const useScrollScale = (scaleRef, minScale = 1) => {
  useEffect(() => {
@@ -207,6 +206,8 @@ export default function App() {
     </div>
 </div>
         
+
+        
         <div className='bg-gradient-to-b from-transparent via-black  via-black via-black to-black backdrop-blur-[2px] py-[10vh] w-screen z-10  text-center justify-center'>
         <div>
   <h1 id="sponsors" className='text-white z-10 font-[tech] text-[10vw] md:text-[10vw] mb-[80px] md:mb-0 text-center mx-auto mt-[40vh]'>
@@ -223,9 +224,9 @@ export default function App() {
     <div className='flex justify-center'>
       <img className='my-auto w-full max-w-[60px]' src="/xyz.webp"/>
     </div>
+    
   </div>
-
-  <div className='flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[40vh] z-10 '>
+  <div className='flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[60vh] z-10 '>
     <div className='text-white font-[tech] z-10 w-full md:w-1/4 text-center md:text-left my-auto'>
       BECOME A SPONSOR
     </div>
@@ -236,7 +237,7 @@ export default function App() {
     </div>
   </div>
 
-  <div className='flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[40vh] z-10 mb-[40vh]'>
+  <div className='flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[60vh] z-10 mb-[40vh]'>
     <div className='text-white font-[tech] z-10 w-full md:w-1/4 md:text-left text-center my-auto'>
       GOT QUESTIONS?
     </div>
@@ -249,6 +250,22 @@ export default function App() {
       
     </div>
   </div>
+  
+  <h1 id="sponsors" className='text-white z-10 font-[tech] text-[10vw] md:text-[5vw] mb-[80px] md:mb-0 text-center mx-auto mt-[40vh]'>
+    HACKATHON PROPOSAL
+  </h1> 
+  <div className='block md:flex gap-8 md:gap-10 mx-4 md:mx-[70vh] mb-[40vh] mt-[7vh] mx-auto'>
+    <p className='font-[tech] md:text-left text-white '>Get all the details about our upcoming hackathon, including objectives, problem statements, timelines, and sponsorship opportunities. Download the proposal now and be part of the innovation!</p>
+    <a href='https://drive.google.com/file/d/1afvbK_3YsLZVSkYs4TjLnHE3akoR1jHt/view?usp=sharing'>
+  <button className='bg-white px-4 py-3 md:px-5 md:py-4 font-[tech] text-lg md:text-lg z-10 mt-5 w-full md:w-[10vw]'>
+        SEE THE PROPOSAL
+      </button>
+      </a>
+  </div>
+
+  
+
+  
 </div>
 
         <div>
