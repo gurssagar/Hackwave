@@ -212,7 +212,7 @@ export default function App() {
   <h1 id="sponsors" className='text-white z-10 font-[tech] text-[10vw] md:text-[10vw] mb-[80px] md:mb-0 text-center mx-auto mt-[40vh]'>
     SPONSORS
   </h1> 
-  <div className='grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mx-4 md:mx-[40vh] '>
+  <div className='grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 mx-4 md:mx-[40vh] '>
     <div className='flex justify-center'>
       <img className='my-auto w-full max-w-[200px]' alt="ETHINDIA LOGO" src="/eth3.webp"/>
     </div>
@@ -261,7 +261,7 @@ export default function App() {
         <img className='w-[150px]  h-[150px] mx-auto md:w-[200px] md:h-[200px] grayscale' src="/eshaa_bhasin.webp" alt="Eshaa Bhasin"/>
         <div className="text-center md:text-left text-white">
             <h2 className='text-3xl md:text-4xl my-3'>Eshaa Bhasin</h2>
-            <p className='text-lg font-[tech]'>LEAD & ORGANIZER</p>
+            <p className='text-lg font-[tech]'>LEAD </p>
             <div className='text-lg font-[tech] my-3 bg-white text-black rounded-xl text-center mx-auto md:mx-0 w-[40%] md:w-[60%]'>GDG GTBIT</div>
         </div>
     </div>
