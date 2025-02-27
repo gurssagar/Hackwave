@@ -181,20 +181,16 @@ export default function App() {
     </div>
   </div>
 
-  <div className='text-2xl md:text-lg flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[40vh] z-10'>
+  <div className='flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[40vh]'>
     <div className='text-white font-[tech] z-10 w-full md:w-1/4 text-left'>
       Register Now
     </div>
-    hackwavex
     <div className='z-10 w-full md:w-2/3'>
       <p className='text-white font-[tech] text-xl md:text-xl z-10 text-left'>
         Ready to make waves with your ideas? Join us and build something incredible! 🌊🚀
       </p>
       <div 
-	      class="apply-button" 
-	      data-hackathon-slug="hackwavex" 
-	      data-button-theme="dark"
-	      className='apply-button bg-white px-4  py-3 md:px-5 md:py-4 font-[tech] text-lg md:text-lg z-10 mt-5 w-full md:w-auto'
+	      className='bg-white px-4  py-3 md:px-5 md:py-4 font-[tech] text-lg md:text-lg z-10 mt-5 w-full md:w-auto'
         >REGISTER NOW</div>
     </div>
   </div>
@@ -220,9 +216,7 @@ export default function App() {
     <div className='flex justify-center'>
       <img className='my-auto w-full max-w-[200px]' alt="ETHINDIA LOGO" src="/eth3.webp"/>
     </div>
-    <div className='flex justify-center'>
-      <img className='my-auto w-full max-w-[200px]' alt="DEVFOLIO LOGO" src="/devfolio.png"/>
-    </div>
+    
     <div className='flex justify-center'>
       <img className='my-auto w-full max-w-[200px]' src="/polygon.webp"/>
     </div>
@@ -297,7 +291,7 @@ export default function App() {
         <img className='w-[150px] h-[150px] mx-auto  md:w-[200px] md:h-[200px] grayscale' src="/mukal.jpg" alt="Mukal Dadhwal"/>
         <div className="text-center md:text-left">
             <h2 className='text-3xl md:text-4xl my-3'>Mukal Dadhwal</h2>
-            <p className='text-lg font-[tech]'>TEACH LEAD</p>
+            <p className='text-lg font-[tech]'>TECH LEAD</p>
             <div className='text-lg font-[tech] my-3 bg-white text-black rounded-xl text-center mx-auto md:mx-0 w-[40%] md:w-[60%]'>GDG GTBIT</div>
         </div>
     </div>
