@@ -338,7 +338,7 @@ export default function App() {
         <img className='w-[150px] h-[150px] mx-auto  md:w-[200px] md:h-[200px] grayscale' src="/ishwardeep_singh.webp" alt="Ishwardeep Singh"/>
         <div className="text-center md:text-left">
             <h2 className='text-3xl md:text-4xl my-3'>Ishwardeep Singh</h2>
-            <p className='text-lg font-[tech] capitalize'>Growth and Innovation Lead</p>
+            <p className='text-lg font-[tech] capitalize'>GROWTH AND INNOVATION LEAD</p>
             <div className='text-lg font-[tech] my-3 bg-white text-black rounded-xl text-center mx-auto md:mx-0 w-[40%] md:w-[60%]'>GDG GTBIT</div>
         </div>
     </div>
