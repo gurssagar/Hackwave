@@ -214,15 +214,8 @@ export default function App() {
     SPONSORS
   </h1> 
   <div className='grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 mx-4 md:mx-[40vh] '>
-    <div className='flex justify-center'>
-      <img className='my-auto w-full max-w-[200px]' alt="ETHINDIA LOGO" src="/eth3.webp"/>
-    </div>
-    
-    <div className='flex justify-center'>
-      <img className='my-auto w-full max-w-[200px]' src="/polygon.webp"/>
-    </div>
-    <div className='flex justify-center'>
-      <img className='my-auto w-full max-w-[60px]' src="/xyz.webp"/>
+  <div className='text-white z-10 font-[tech] text-lg md:text-2xl text-center'>
+        To be released soon
     </div>
     
   </div>
