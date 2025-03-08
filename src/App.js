@@ -213,13 +213,23 @@ export default function App() {
   <h1 id="sponsors" className='text-white z-10 font-[tech] text-[10vw] md:text-[10vw] mb-[80px] md:mb-0 text-center mx-auto mt-[40vh]'>
     SPONSORS
   </h1> 
-  <div className='grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 mx-4 md:mx-[40vh] '>
-  <div className='text-white z-10 font-[tech] text-lg md:text-2xl text-center'>
-        To be released soon
-    </div>
-    
+  <div className='mx-auto gap-8 md:gap-10 mx-4 md:mx-[40vh] '>
+<div className='grid grid-cols-2 md:grid-cols-3 mx-auto items'>
+  <div className='flex items-center justify-center p-4 rounded-lg'>
+    <img src="/polygon.webp" alt="Sponsor 1" className='w-[20vh]' />
   </div>
-  <div className='flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[60vh] z-10 '>
+  <div className='flex items-center justify-center  p-4 rounded-lg'>
+    <img src="/devfolio.png" alt="Devfolio" className='w-[20vh]' />
+  </div>
+  <div className='flex items-center justify-center  p-4 rounded-lg'>
+    <img src="/ethindia.png" alt="EthIndia" className='w-[20vh]' />
+  </div>
+  <div className='flex items-center justify-center  p-4 rounded-lg'>
+    <img src="/xyz.webp" alt="xyz" className='w-[20vh]' />
+  </div>
+</div>
+  </div>
+  <div className='pt-[40vh] flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[60vh] z-10 '>
     <div className='text-white font-[tech] z-10 w-full md:w-1/4 text-center md:text-left my-auto'>
       BECOME A SPONSOR
     </div>
