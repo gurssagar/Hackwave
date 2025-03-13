@@ -259,7 +259,7 @@ export default function App() {
   </h1> 
   <div className='block md:flex gap-8 md:gap-10 mx-4 md:mx-[70vh] mb-[40vh] mt-[7vh] mx-auto'>
     <p className='font-[tech] md:text-left text-white '>Get all the details about our upcoming hackathon, including objectives, problem statements, timelines, and sponsorship opportunities. Download the proposal now and be part of the innovation!</p>
-    <a href='https://drive.google.com/file/d/1uDDzuUXoWz8RtyigfY-ukrwZSNVWslEg/view?usp=sharing'>
+    <a href='https://drive.google.com/file/d/1qyl9XAr3I212bzFsHrsAyBj3y-QKzmMs/view?usp=sharing'>
   <button className='bg-white px-4 py-3 md:px-5 md:py-4 font-[tech] text-lg md:text-lg z-10 mt-5 w-full md:w-[10vw]'>
         SEE THE PROPOSAL
       </button>
