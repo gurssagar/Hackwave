@@ -215,9 +215,6 @@ export default function App() {
   </h1> 
   <div className='mx-auto gap-8 md:gap-10 mx-4 md:mx-[40vh] '>
 <div className='grid grid-cols-2 md:grid-cols-3 mx-auto items'>
-  <div className='flex items-center justify-center p-4 rounded-lg'>
-    <img src="/polygon.webp" alt="Sponsor 1" className='w-[20vh]' />
-  </div>
   <div className='flex items-center justify-center  p-4 rounded-lg'>
     <img src="/devfolio.png" alt="Devfolio" className='w-[20vh]' />
   </div>
@@ -225,8 +222,27 @@ export default function App() {
     <img src="/ethindia.png" alt="EthIndia" className='w-[20vh]' />
   </div>
   <div className='flex items-center justify-center  p-4 rounded-lg'>
+    <img src="/refact.png" alt="HackWave" className='w-[20vh]' />
+  </div>
+  
+  <div className='flex items-center justify-center  p-4 rounded-lg'>
+  <img src="/kgen.jpg" alt="kgen" className='w-[20vh]' />
+  </div>
+
+  <div className='flex items-center justify-center  p-4 rounded-lg'>
     <img src="/xyz.webp" alt="xyz" className='w-[20vh]' />
   </div>
+  <div className='text-center m-auto'>
+  <img src="/dulity.svg" alt="kgen" className='w-[20vh] text-center' />
+  </div>
+  <div className='text-center m-auto'>
+  <img src="/interview.svg" alt="kgen" className='w-[20vh] text-center' />
+  </div>
+  <div className='text-center m-auto'>
+  <img src="/cybervajra.png" alt="cybervajra" className='w-[20vh] text-center' />
+  </div>
+
+
 </div>
   </div>
   <div className='pt-[40vh] flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[60vh] z-10 '>
