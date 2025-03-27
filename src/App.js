@@ -232,7 +232,9 @@ export default function App() {
   <div className='flex items-center justify-center  p-4 rounded-lg'>
     <img src="/xyz.webp" alt="xyz" className='w-[20vh]' />
   </div>
-  
+  <div className='text-center m-auto'>
+  <img src="/dulity.svg" alt="kgen" className='w-[20vh] text-center' />
+  </div>
   <div className='text-center m-auto'>
   <img src="/interview.svg" alt="kgen" className='w-[20vh] text-center' />
   </div>
