@@ -241,6 +241,9 @@ export default function App() {
   <div className='text-center m-auto'>
   <img src="/cybervajra.png" alt="cybervajra" className='w-[20vh] text-center' />
   </div>
+  <div className='text-center m-auto'>
+  <img src="/bala.svg" alt="Balsamiq" className='w-[20vh] text-center' />
+  </div>
 
 
 </div>
