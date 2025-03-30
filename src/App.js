@@ -224,11 +224,6 @@ export default function App() {
   <div className='flex items-center justify-center  p-4 rounded-lg'>
     <img src="/refact.png" alt="HackWave" className='w-[20vh]' />
   </div>
-  
-  <div className='flex items-center justify-center  p-4 rounded-lg'>
-  <img src="/kgen.jpg" alt="kgen" className='w-[20vh]' />
-  </div>
-
   <div className='flex items-center justify-center  p-4 rounded-lg'>
     <img src="/xyz.webp" alt="xyz" className='w-[20vh]' />
   </div>
@@ -239,7 +234,7 @@ export default function App() {
   <img src="/interview.svg" alt="kgen" className='w-[20vh] text-center' />
   </div>
   <div className='text-center m-auto'>
-  <img src="/cybervajra.png" alt="cybervajra" className='w-[20vh] text-center' />
+  <img src="/crack.jpg" alt="Balsamiq" className='w-[20vh] text-center' />
   </div>
   <div className='text-center m-auto'>
   <img src="/bala.svg" alt="Balsamiq" className='w-[20vh] text-center' />
