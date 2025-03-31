@@ -188,9 +188,9 @@ export default function App() {
       <p className='text-white font-[tech] text-xl md:text-xl z-10 text-left'>
         Ready to make waves with your ideas? Join us and build something incredible! 🌊🚀
       </p>
-      <div 
+      <a href="https://hackwave-x.devfolio.co/"><div 
 	      className='bg-white px-4  py-3 md:px-5 md:py-4 font-[tech] text-lg md:text-lg z-10 mt-5 w-full md:w-auto'
-        >REGISTER NOW</div>
+        >REGISTER NOW</div></a>
     </div>
   </div>
 </div>
@@ -472,7 +472,7 @@ export default function App() {
         I am below 18 or a high school student. Can I attend the hackathon?
       </AccordionTrigger>
       <AccordionContent className='text-white text-center md:text-left text-lg'>
-        <p>Yes, you are most welcome but you will need to have your parent's consent to stay in the premises from 9th to 10th.</p>
+        <p>Yes, you are most welcome but you will need to have your parent's consent to stay in the premises from 24th to 25th.</p>
       </AccordionContent>
     </AccordionItem>
 
