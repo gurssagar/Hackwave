@@ -1,13 +1,14 @@
 
 import './App.css';
+import Timeline from './components/timeline';
 import { useEffect, useState, useRef } from "react";
 import {useRive} from "@rive-app/react-canvas";
-import { Document, Page, pdfjs } from 'react-pdf';
 import { FlipWords } from './components/flipwords';
 import { SignupFormDemo } from './components/form';
 import AccordionComponents from './components/accordion'
 import Navigation from './components/navigation';
 const { Accordion, AccordionItem, AccordionTrigger, AccordionContent } = AccordionComponents
+
 
 const useScrollScale = (scaleRef, minScale = 1) => {
  useEffect(() => {
@@ -95,6 +96,263 @@ const useScrollScale = (scaleRef, minScale = 1) => {
   }, [scaleRef, minScale]);
 };
 export default function App() {
+
+  //Timeline
+  const data = [
+    {
+      title: "Online Round  ",
+      dates:"21st April",
+      content: (
+               <div className='overflow-auto'>
+          <div className="grid grid-cols-1 gap-4">
+            <img
+              src="code1.png"
+              alt="startup template"
+              width={1000}
+              height={1000}
+              className="rounded-lg object-cover h-80 md:h-80 lg:h-[480px] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+          <div className=''>
+            <div className='text-right space-y-4 pt-10'>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  10:00AM - 11:00 AM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Commencement of Online Round</h1>
+                  <p className='text-lg text-gray-300 leading-relaxed text-right'>
+                    Intro, Welcome, Rules & Themes
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className='text-right space-y-4 pt-10'>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  2:00 PM Onwards
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Submit Initial Pitch/Ideas/Presentation</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  3:00 PM - 8:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Pitches + Judging</h1>
+                  <p className='text-lg text-gray-300 leading-relaxed text-right'>
+                    3 panels, slide & time limits
+                  </p>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  8:00 PM - 10:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Shortlisting</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  10:00 PM Onwards
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Release Final List</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Offline Round",
+      dates:'24th April',
+      content: (
+                <>
+        <img
+              src="code2.jpg"
+              alt="startup template"
+              width={1000}
+              height={1000}
+              className="rounded-lg object-cover h-80 md:h-80 lg:h-[480px] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+        <div>
+          <div className='overflow-auto'>
+          <div className='text-right space-y-4 pt-10'>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  8:00 - 9:00 AM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Preparation</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  9:00 - 10:00 AM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Registration</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  10:00 - 12:00 AM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Commencement + Keynote</h1>
+                </div>
+              </div>
+            </div>
+            <div className='text-right space-y-4 pt-10'>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  12:00 PM - 2:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Time for Development</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  2:00 - 3:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Lunch</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  3:00 - 4:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Speaker Session + Sponsorship</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  4:00 PM - 5:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Time for Development</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  5:00 -7:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Review and Elimination</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  7:00 - 8:30 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Results Out + Stay + Time for Dev</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  8:30 - 10:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Dinner</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  10:00 - 11:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Mentorship Session</h1>
+                  <p className='text-lg text-gray-300 leading-relaxed text-right'>
+                    Improvement / Criticism
+                  </p>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  11:00 PM - 8:00 AM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Sleep</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </>
+      ),
+    },
+    {
+      title: "Offline Round",
+      dates:"25th April",
+      content: (
+                               <>
+        <img
+              src="code3.jpg"
+              alt="startup template"
+              width={1000}
+              height={1000}
+              className="rounded-lg object-cover h-80 md:h-80 lg:h-[480px] w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+        <div>
+          <div className='overflow-auto'>
+          <div className='text-right space-y-4 pt-10'>
+                
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  8:00 - 10:00 AM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Wake Up</h1>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  10:00 - 12:00 AM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Final Round Submissions</h1>
+                  <p className='text-lg text-gray-300 leading-relaxed text-right'>
+                    Panel Review
+                  </p>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  12:00 - 1:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Result Declaration</h1>
+                  <p className='text-lg text-gray-300 leading-relaxed text-right'>
+                    Thank You Note
+                  </p>
+                </div>
+              </div>
+              <div className='flex justify-between items-start space-x-4 mx-5'>
+                <div className='bg-gray-900 text-xs rounded-full py-3 px-4 flex-shrink-0'>
+                  1:00 - 3:00 PM
+                </div>
+                <div className='space-y-2'>
+                  <h1 className='text-2xl font-medium'>Wrap Up</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </>
+      ),
+    },
+  ];
+//End Timeline
+
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -196,15 +454,7 @@ export default function App() {
 </div>
         
 
-       <div id="timeline" className='mt-20vh md:mt-[50vh] mt-[20vh] text-white z-10 text-4xl md:text-7xl flex gap-10 mx-20vh md:mx-[40vh]'>
-    <p className='z-10 font-[tech] text-8vw md:text-[10vw] text-center mx-auto'>TIMELINE</p>
-</div>
-
-<div className='bg-black z-10 flex mx-20vh md:mx-[40vh] text-center justify-center  '>
-    <div className='text-white z-10 font-[tech] text-lg md:text-2xl text-center'>
-        To be released soon
-    </div>
-</div>
+       
         
 
         
@@ -361,6 +611,17 @@ export default function App() {
     </div>
 </div>
         </div>
+
+
+        <div id="timeline" className='mt-20vh md:mt-[50vh] mt-[20vh] text-white z-10 text-4xl md:text-7xl flex gap-10 mx-20vh md:mx-[40vh]'>
+    <p className='z-10 font-[tech] text-8vw md:text-[10vw] text-center mx-auto'>TIMELINE</p>
+</div>
+
+<div className='bg-black z-10 flex mx-20vh md:mx-[40vh] text-center justify-center  '>
+    <div className='text-white z-10 font-[tech] text-lg md:text-2xl text-center'>
+      <Timeline data={data} />
+    </div>
+</div>
 
 
         <h1 id="faq" className='text-white z-10 font-[tech] text-5xl md:text-7xl text-center mx-auto capitalize mt-[20vh] md:mt-[40vh]'>
