@@ -434,7 +434,8 @@ export default function App() {
       Mark Your Calendar
     </div>
     <div className='text-white font-[tech] text-xl md:text-xl z-10 w-full md:w-2/3'>
-      April 2025, New Delhi
+      Online  21 April 2025, Google Meet
+      Offline 24-25 April 2025, New Delhi
     </div>
   </div>
 
