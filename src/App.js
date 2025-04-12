@@ -101,7 +101,7 @@ export default function App() {
   const data = [
     {
       title: "Online Round  ",
-      dates:"21st April",
+      dates:"3rd May",
       content: (
                <div className='overflow-auto'>
           <div className="grid grid-cols-1 gap-4">
@@ -170,7 +170,7 @@ export default function App() {
     },
     {
       title: "Offline Round",
-      dates:'24th April',
+      dates:'6th May',
       content: (
                 <>
         <img
@@ -292,7 +292,7 @@ export default function App() {
     },
     {
       title: "Offline Round",
-      dates:"25th April",
+      dates:"7th May",
       content: (
                                <>
         <img
@@ -434,8 +434,8 @@ export default function App() {
       Mark Your Calendar
     </div>
     <div className='text-white font-[tech] text-xl md:text-xl z-10 w-full md:w-2/3'>
-      Online  21 April 2025, Google Meet<br></br>
-      Offline 24-25 April 2025, New Delhi
+      Online  3rd May, Google Meet<br></br>
+      Offline 6th-7th May 2025, New Delhi
     </div>
   </div>
 
@@ -613,16 +613,16 @@ export default function App() {
 </div>
         </div>
 
-
+{/* 
         <div id="timeline" className='mt-20vh md:mt-[50vh] mt-[20vh] text-white z-10 text-4xl md:text-7xl flex gap-10 mx-20vh md:mx-[40vh]'>
     <p className='z-10 font-[tech] text-8vw md:text-[10vw] text-center mx-auto'>TIMELINE</p>
-</div>
+</div> */}
 
-<div className='bg-black z-10 flex mx-20vh md:mx-[40vh] text-center justify-center  '>
+{/* <div className='bg-black z-10 flex mx-20vh md:mx-[40vh] text-center justify-center  '>
     <div className='text-white z-10 font-[tech] text-lg md:text-2xl text-center'>
       <Timeline data={data} />
     </div>
-</div>
+</div> */}
 
 
         <h1 id="faq" className='text-white z-10 font-[tech] text-5xl md:text-7xl text-center mx-auto capitalize mt-[20vh] md:mt-[40vh]'>
