@@ -399,7 +399,7 @@ export default function App() {
     <>
       <Navigation/>
       
-      <div className='containers '>   
+      <div className='containers overflow-hidden'>   
       
         <RiveComponent />
       </div>
@@ -490,11 +490,19 @@ export default function App() {
   <div className='text-center m-auto'>
   <img src="/bala.svg" alt="Balsamiq" className='w-[20vh] text-center' />
   </div>
+  <div className='text-center m-auto'>
+  <img src="/appwrite.svg" alt="Appwrite" className='w-[20vh] text-center' />
+  </div>
+
+
+  
 
 
 </div>
   </div>
-  <div className='pt-[40vh] flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[60vh] z-10 '>
+
+  
+  <div className='pt-[10vh] flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[60vh] z-10 '>
     <div className='text-white font-[tech] z-10 w-full md:w-1/4 text-center md:text-left my-auto'>
       BECOME A SPONSOR
     </div>
@@ -503,8 +511,9 @@ export default function App() {
       Reach out to us at connect@hackwave.tech
         
     </div>
-  </div>
+  </div> 
 
+    
   <div className='flex flex-col md:flex-row mt-10 gap-5 mx-5 md:mx-[60vh] z-10 mb-[40vh]'>
     <div className='text-white font-[tech] z-10 w-full md:w-1/4 md:text-left text-center my-auto'>
       GOT QUESTIONS?
@@ -518,6 +527,37 @@ export default function App() {
       
     </div>
   </div>
+
+
+  <div>
+        <h1 id="team" className='text-white mt-[40vh] z-10 font-[tech] text-[10vw] text-center mx-auto'>
+          MENTORS
+        </h1> 
+        <div className='grid text-white grid-cols-1 md:grid-cols-2 my-10 mx-0 md:mx-[34vh] gap-x-[10vh] gap-y-8'>
+    {/* Aditi */}
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-white'>
+        <img className='w-[150px]  h-[150px] mx-auto md:w-[200px] md:h-[200px] grayscale' src="aditi1.jpg" alt="Aditi"/>
+        <div className="text-center md:text-left text-white">
+            <h2 className='text-2xl md:text-3xl my-3'>Aditi Jalali</h2>
+            <p className='text-[16px] font-[tech]'>Ex-Management Lead</p>
+            <div className='text-lg font-[tech] my-3 bg-white text-black rounded-xl text-center mx-auto md:mx-0 w-[40%] md:w-[60%]'>GDG GTBIT</div>
+        </div>
+    </div>
+    {/*Anshdeep Singh*/}
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-white'>
+        <img className='w-[150px]  h-[150px] mx-auto md:w-[200px] md:h-[200px] grayscale' src="anshdeep.jpeg" alt="Anshdeep Singh"/>
+        <div className="text-center md:text-left text-white">
+            <h2 className='text-2xl md:text-3xl my-3'>Anshdeep Singh</h2>
+            <p className='text-[16px] font-[tech]'>Software Development Engineer</p>
+            <div className='text-lg font-[tech] my-3 bg-white text-black rounded-xl text-center mx-auto md:mx-0 w-[40%] md:w-[60%]'>Stimuler</div>
+        </div>
+    </div>
+
+    
+</div>
+        </div> 
+
+  
   
   <h1 id="sponsors" className='text-white z-10 font-[tech] text-[10vw] md:text-[5vw] mb-[80px] md:mb-0 text-center mx-auto mt-[40vh]'>
     HACKATHON PROPOSAL
@@ -774,5 +814,4 @@ export default function App() {
       
     
     </>
-  );
-}
+  );}
